@@ -1,0 +1,93 @@
+﻿@model IEnumerable<MVC_monthly.Models.c00.Index>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TITLE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IMAGE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LINK)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TITLE_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IMAGE_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LINK_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TITLE_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IMAGE_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LINK_3)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TITLE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IMAGE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LINK)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TITLE_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IMAGE_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LINK_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TITLE_3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IMAGE_3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LINK_3)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

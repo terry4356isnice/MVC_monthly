@@ -1,0 +1,106 @@
+﻿@model MVC_monthly.Models.c00.Index
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Index</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TITLE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TITLE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IMAGE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IMAGE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LINK)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LINK)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TITLE_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TITLE_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IMAGE_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IMAGE_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LINK_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LINK_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TITLE_3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TITLE_3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IMAGE_3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IMAGE_3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LINK_3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LINK_3)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
